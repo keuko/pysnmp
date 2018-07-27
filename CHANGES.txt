@@ -7,6 +7,8 @@ Revision 4.4.5, released 2018-04-XX
 - Fixed possible infinite loop in GETBULK response PDU builder
 - Fixed memory leak in the T`config.delContext()` VACM management harness
 - Fixed `Bits` class initialization when enumeration values are given
+- Fixed out-of-scope OIDs leaking at the end of SNMP table at hlapi `nextCmd`
+  and `bulkCmd` calls when `lexicographicMode = False`
 
 Revision 4.4.4, released 2018-01-03
 -----------------------------------
